@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                    crossorigin="anonymous">
+
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>My portfolio</title>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                    crossorigin="anonymous"></script>
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+          <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Rashi's Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                                  <a class="nav-link" href="#section-a">Home <span
+                                                                      class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                                  <a class="nav-link" href="#" onclick="readMoreFirst()">About <span
+                                                                      class="sr-only"></span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                                  <a class="nav-link" href="#section-c">Contact <span
+                                                                      class="sr-only">(current)</span></a>
+                                        </li>
+
+
+
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                                                  onclick="showgmail()">connect now</button>
+                              </form>
+                    </div>
+          </nav>
+
+
+          <div class="jumbotron" id="section-a">
+                    <h1 class="display-4">Hello! I am Rashi Tiwari</h1>
+                    <p class="lead">Web enthusiast exploring full-stack development with HTML,
+                              CSS, JavaScript, and Bootstrap.
+                              Excited to learn and create user-friendly websites</p>
+                    <hr class="my-4">
+                    <p>Eager to expand my tech stack and create dynamic
+                              websites with a passion for continuous learning.</p>
+
+                    <span id="captionFirst" class="caption">
+                              <!-- Being with you is always.. -->
+                    </span>
+                    <!-- <a  class="btn-more" id="btn-1"  onclick="readMoreFirst()"> more</a> -->
+                    <p class="lead">
+                              <a class=" btn btn-info btn-lg btn-more" id="btn-1" onclick="readMoreFirst()">More</a>
+                    </p>
+          </div>
+
+
+
+
+          <div class="p-5">
+                    <h1 class=" d-flex justify-content-center">My skills</h1>
+                    <!-- <h1>HTML</h1>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div> -->
+                    <h1>HTML</h1>
+                    <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1>CSS</h1>
+                    <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1>Javascript</h1>
+                    <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h1>Bootstrap</h1>
+                    <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+          </div>
+
+          <div>
+
+          </div>
+
+
+          <h1 class=" d-flex justify-content-center">Projects</h1>
+          <div id="carouselExampleIndicators" class="carousel slide p-5 bg-black" data-ride="carousel">
+                    ⬅️
+                    <p class="d-flex float-right">➡️</p>
+                    <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                              <!-- <div class="carousel-item active ">
+            <img class="d-block  w-100" src="./images/image01.png" alt="First slide">
+          </div> -->
+
+                              <div class="carousel-item active">
+                                        <img class="d-block w-70" src="/images/image03.png" alt="Third slide">
+                              </div>
+                              <div class="carousel-item">
+                                        <img class="d-block w-70" src="/images/image04.png" alt="Third slide">
+                              </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                    </a>
+          </div>
+
+          <h1 class=" d-flex justify-content-center mt-5" id="section-c">Contact me</h1>
+          <p class=" d-flex justify-content-center mt-5">lets connect- example@gmail.com</p>
+          <div class="container p-5">
+                    <div class="row">
+                              <div class="col-md-6">
+                                        <form>
+                                                  <div class="form-group">
+                                                            <label>Your Name</label>
+                                                            <input type="text" class="form-control" placeholder="">
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="exampleInputEmail1">Your Email address</label>
+                                                            <input type="email" class="form-control"
+                                                                      id="exampleInputEmail1"
+                                                                      aria-describedby="emailHelp"
+                                                                      placeholder="Enter email">
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label>Your message</label>
+                                                            <input type="text" class="form-control" placeholder="">
+                                                  </div>
+
+                                                  <button type="submit" onclick="handlebutton()"
+                                                            class="btn btn-primary">Send Message</button>
+                                        </form>
+                              </div>
+                              <div class="col-md-6">
+                                        <img class="rounded float-right" alt="..."
+                                                  src="https://imgs.search.brave.com/YyBKW2BdrbIum5cqXbqfS3mVt-W5WIIlpEfVF5w5OGc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8w/NS8xNi8yMC8xNS9v/bmxpbmUtNDIwODEx/Ml82NDAuanBn">
+                              </div>
+                    </div>
+          </div>
+
+
+
+          </form>
+
+          <footer class="footer">
+
+                    <div class="social-links">
+                              <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                              <a href="https://github.com/RashiTiwari2" target="_blank">GitHub</a>
+                    </div>
+                    <div class="copyright">
+                              <p>&copy; 2024. All rights reserved.</p>
+                    </div>
+          </footer>
+
+          <script>
+                    const moretext = "Aspiring to become a proficient full-stack developer, I have laid a strong foundation in web development with expertise in HTML, CSS, JavaScript, and Bootstrap. My dedication to continuous learning drives me to explore new technologies and enhance my skills in both front-end and back-end development. With a keen eye for design and a passion for creating seamless user experiences, I am committed to delivering high-quality and innovative solutions. Eager to embrace challenges, I am on a journey to expand my knowledge, tackle complex problems, and contribute to the dynamic world of web development.";
+
+
+
+
+                    function handlebutton() {
+                              alert('Thanks for connecting!');
+                    }
+                    function readMoreFirst() {
+                              $("#captionFirst").text(moretext)
+                              $("#btn-1").hide()
+                    }
+                    function showgmail() {
+                              alert('connect now:- example@gmail.com')
+                    }
+          </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.intro-div {
+          background-color: rgb(28, 211, 135);
+          display: flex;
+          justify-content: center;
+          flex-direction: column
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0px;
+          margin-bottom: 10px;
+          background-color: black;
+          width: 100%;
+}
+
+.social-links {
+          display: flex;
+          gap: 15px;
+
+          padding: 20px;
+}
+
+.copyright {
+          font-weight: 400;
+          font-size: 16px;
+          margin-top: 5px;
+          color: #FFFFFF;
+
+}
